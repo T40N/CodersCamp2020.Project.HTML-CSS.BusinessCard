@@ -1,18 +1,154 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+        integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+        crossorigin="anonymous" />
+    <title>Document</title>
 </head>
 
 <body>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-<p>TEST commit</p>
+    <div class="scroll-container">
+        <div id="navbar" class="navbar top">
+                <h1 class="logo">
+                    <a href="#home" aria-label="Home section"><i class="fas fa-code"></i>T40N</a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about" aria-label="AboutMe section">AboutMe</a></li>
+                        <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+                        <li><a href="#gallery" aria-label="Gallery section">Gallery</a></li>
+                        <li><a href="#message" aria-label="Contact section">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        <section class="hero" id="home">
+
+            <div class="content">
+                <div class="content-box">
+                    <h1 class="text-primary">Welcome</h1>
+                    <p>My name is <span class="text-primary">Bartek</span> nice to see you!</p>
+                    <a href="#about" aria-label="Next section"><i class="fas fa-arrow-down fa-2x btn"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about" class="section-about">
+            <h1 class="section-titles">About me</h1>
+            <div class="about-container">
+                <div class="about-me">
+                    <div class="foto-me"><img src="/img/me.jpg" alt="Fotography of me"></div>
+                    <ul>
+                        <li>Full Name: <span class="text-primary">Bartosz Ratajczyk</span></li>
+                        <li>Age: <span class="text-primary">21 Years</span></li>
+                        <li>Profile: <span class="text-primary"> Fullstack & Casual writer</span></li>
+                    </ul>
+                </div>
+                <div class="description">
+                    <h1>Who I'am exactly ?</h1>
+                    <p>Hi my name is Bartosz (Bartek for short). I live in lodz a city in the center of Poland, where I study IT. I'm big fun of technology, esport and fantasy. Also I play table top RPGS since 2015 and I'm game master since 2017. I have small passion for writing too but I don't consider myself a good writer.
+                    </p>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="#skills" aria-label="Next section"><i class="fas fa-arrow-down fa-2x btn"></i></a>
+                <a href="#home" aria-label="Previous section"><i class="fas fa-arrow-up fa-2x btn"></i></a>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h1 class="section-titles">What can I do ?</h1>
+            <div class="skill-grade">
+                <div class="items">
+                    <i class="far fa-object-ungroup fa-3x"></i>
+                    <h1 class="text-primary">Design</h1>
+                    <h3>Figma, Adobe XD</h3>
+                </div>
+                <div class="items">
+                    <i class="fas fa-code fa-3x"></i>
+                    <h1 class="text-primary">Coding</h1>
+                    <h3>JavaScript, Html&Css, C++</h3>
+                </div>
+                <div class="items">
+                    <i class="fas fa-book-open fa-3x"></i>
+                    <h1 class="text-primary">Writing</h1>
+                    <h3>RPG scerarios, Short Stories</h3>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="#gallery" aria-label="Next section"><i class="fas fa-arrow-down fa-2x btn"></i></a>
+                <a href="#about" aria-label="Previous section"><i class="fas fa-arrow-up fa-2x btn"></i></a>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h1 class="section-titles">I like and did</h1>
+            <div class="grid-container">
+                <div class="item">
+                    <i class="fas fa-book fa-3x"></i>
+                    <h3>Book Library</h3>
+                </div>
+                <div class="item">
+                    <i class="fas fa-dice-d20 fa-3x"></i>
+                    <h3>RPG scenarios</h3>
+                </div>
+                <div class="item">
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>Projects</h3>
+                </div>
+                <div class="item">
+                    <i class="far fa-file-word fa-3x"></i>
+                    <h3>Short stories</h3>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="#message" aria-label="Next section"><i class="fas fa-arrow-down fa-2x btn"></i></a>
+                <a href="#skills" aria-label="Previous section"><i class="fas fa-arrow-up fa-2x btn"></i></a>
+            </div>
+        </section>
+
+        <section class="message" id="message">
+            <div class="form-wrap">
+                <h1>Have questions?</h1>
+                <p>Text me I will respond as fast as I can.</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="Name" id="name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" name="Email" id="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Topic</label>
+                        <input type="text" name="topic" id="topic" />
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Message</label>
+                        <textarea type="text" name="message" id="text"> </textarea>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+            <div class="nav">
+                <a href="#gallery" aria-label="Previous section"><i class="fas fa-arrow-up fa-2x btn"></i></a>
+            </div>
+        </section>
+    </div>
+
+    <!-- 
+        Bug fix for chrome where tranistion will fire up on page load. 
+        Solution is to add script tags with one space beetewen 
+    -->
+    <script> </script>
 </body>
+
 </html>
